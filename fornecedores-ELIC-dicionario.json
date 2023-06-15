@@ -1,0 +1,72 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "cadastro-fornecedores-elic",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "num_cpfcnpj",
+            "type": "string",
+            "format": "default",
+            "title": "CNPJ",
+            "description": "Número do Cadastro Nacional de Pessoa Jurídica do fornecedor. Em caso de fornecedor Pessoa Física, o CPF."
+          },
+          {
+            "name": "dsc_razao_social",
+            "type": "string",
+            "format": "default",
+            "title": "Empresa",
+            "description": "Nome da empresa fornecedora"
+          },
+          {
+            "name": "dsc_porte_empresa",
+            "type": "string",
+            "format": "default",
+            "title": "Porte",
+            "description": "Porte da empresa cadastrada"
+          },
+          {
+            "name": "nom_cidade",
+            "type": "string",
+            "format": "default",
+            "title": "Cidade",
+            "description": "Munícipio-sede da empresa, conforme cadastrado no E-LIC"
+          },
+          {
+            "name": "nom_estado",
+            "type": "string",
+            "format": "default",
+            "title": "Estado",
+            "description": "Estado-sede da empresa conforme cadastrado no E-LIC"
+          },
+          {
+            "name": "nom_pais",
+            "type": "string",
+            "format": "default",
+            "title": "País",
+            "description": "País-sede da empresa, conforme cadastrado no E-LIC"
+          },
+          {
+            "name": "dsc_situacao",
+            "type": "string",
+            "format": "default",
+            "title": "Situação",
+            "description": "Situação cadastral da empresa"
+          },
+          {
+            "name": "dsc_classe_produto",
+            "type": "string",
+            "format": "default",
+            "title": "Produtos Habilitados",
+            "description": "Relação de produtos para os quais a empresa está cadastrada para participar de licitações."
+          }
+        ]
+      }
+    }
+  ],
+  "name": "cadastro-fornecedores-elic",
+  "title": "Cadastro de Fornecedores SC",
+  "description": "Base de dados contendo a relação de fornecedores cadastrados no Sistema de Cadastro de Fornecedores do Governo do Estado de Santa Catarina"
+}
